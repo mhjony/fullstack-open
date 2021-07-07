@@ -1,9 +1,29 @@
-GET http://localhost:3001/api/notes
+GET http://localhost:3003/api/notes
 
 ###
-POST http://localhost:3001/api/notes/ HTTP/1.1
+POST http://localhost:3003/api/notes/ HTTP/1.1
 content-type: application/json
 
 {
     "content": "this is content thing"
 }
+
+###
+DELETE http://localhost:3003/api/persons/delete
+content-type: application/json
+
+{
+    "number": "070-281565"
+}
+
+###
+POST http://localhost:3003/api/persons
+content-type: application/json
+
+{
+    "name": "bangladesh",
+    "number": "45522"
+}
+
+###
+GET http://localhost:3003/api/persons
