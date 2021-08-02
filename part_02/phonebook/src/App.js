@@ -24,6 +24,7 @@ const App = () => {
       setPersons([...persons, { name: newName, number: newNumber }]);
       setNewName("");
       setNewNumber("");
+      console.log(`button clicked`);
     }
   };
 
