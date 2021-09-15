@@ -2,6 +2,7 @@ import React from 'react'
 import Course from './components/Course'
 
 const App = () => {
+	console.log("Testing purpose");
 	const courses = [
 		{
 			name: 'Half Stack application development',
