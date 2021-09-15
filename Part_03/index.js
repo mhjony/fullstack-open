@@ -81,6 +81,7 @@ app.post('/api/persons', (request, response) => {
 	if (!body.name || !body.number) {
 		return response.status(400).json({ error: 'request should contain name and number' });
 	}
+
 	const contactName = phonebooks.find((pb) => pb.name === body.name);
 	if (contactName) {
 		return response.status(401).json({ error: 'Name should be unique' });
